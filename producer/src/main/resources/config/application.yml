@@ -1,0 +1,14 @@
+spring:
+  cloud:
+    stream:
+      bindings:
+        # This will be the output channel name on which producer and consumer need to agree
+        # This will, by default, become a pub/sub type queue
+        consumer:
+          destination: greetings
+        # Here we need to
+        directConsumer:
+          destination: directGreetings
+
+server:
+  port: 8000

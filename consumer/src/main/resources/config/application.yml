@@ -1,0 +1,12 @@
+spring:
+  cloud:
+    stream:
+      bindings:
+        consumer:
+          destination: greetings
+        directConsumer:
+          destination: directGreetings
+          group: direct-group
+#          durableSubscription: true
+server:
+  port: 0
