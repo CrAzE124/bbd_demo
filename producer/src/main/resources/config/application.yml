@@ -4,9 +4,9 @@ spring:
       bindings:
         # This will be the output channel name on which producer and consumer need to agree
         # This will, by default, become a pub/sub type queue
+        # The channel will create a rabbitmq exchange or kafka topic (or whatever the binder supports)
         consumer:
           destination: greetings
-        # Here we need to
         directConsumer:
           destination: directGreetings
 

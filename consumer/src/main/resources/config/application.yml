@@ -7,6 +7,12 @@ spring:
         directConsumer:
           destination: directGreetings
           group: direct-group
-#          durableSubscription: true
+#      rabbit:
+#        bindings:
+#          directConsumer:
+#            consumer:
+#              durableSubscription: false
 server:
   port: 0
+endpoints:
+  sensitive: false

@@ -51,7 +51,7 @@ public class ProducerApplication {
 
 //Arbitrary name here
 interface ProducerChannels {
-	//Can have multiple channels here
+	//Can have multiple channels here, input and output
 
 	@Output
 	MessageChannel consumer();
